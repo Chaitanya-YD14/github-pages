@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        var sub = false;
+    </script>
+</head>
+
+<iframe src="" frameborder="0" id="end" name="end"
+    onload="if(sub) { window.location.href = 'endpage.html'; }"
+    class="hidden"></iframe>
+
+<body class="min-h-screen bg-gray-900 flex items-center justify-center text-gray-200">
+
+    <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSfH7IeFtw3bx1pEjuZWot09l402JwQedKPNArzCWKHF2feFwA/formResponse"
+        method="POST" target="end" onsubmit="sub=true;"
+        class="bg-gray-800 border border-gray-700 shadow-2xl rounded-xl p-8 w-full max-w-md">
+
+        <!-- POPPING HEADING -->
+        <fieldset class="space-y-4">
+            <legend
+                class="text-3xl md:text-4xl font-extrabold text-center mb-8
+                bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-500
+                bg-clip-text text-transparent tracking-wider
+                drop-shadow-[0_0_15px_rgba(99,102,241,0.5)]">
+                Club Signing
+            </legend>
+
+            <label for="name" class="block text-sm font-medium text-gray-300">
+                Name
+                <input type="text" id="name" name="entry.105248906" required
+                    class="mt-1 w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-gray-100
+                    focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" />
+            </label>
+
+            <label for="phone" class="block text-sm font-medium text-gray-300">
+                Phone Number
+                <input type="tel" id="phone" name="entry.81260063" required
+                    class="mt-1 w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-gray-100
+                    focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" />
+            </label>
+
+            <label for="email" class="block text-sm font-medium text-gray-300">
+                Email
+                <input type="email" id="email" name="entry.1524198463" required
+                    class="mt-1 w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-gray-100
+                    focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" />
+            </label>
+        </fieldset>
+
+        <fieldset class="mt-6 border border-gray-700 rounded-lg p-4">
+            <legend class="px-2 text-sm font-medium text-indigo-400 tracking-wide">
+                Education
+            </legend>
+
+            <label class="flex items-center space-x-3 mt-2">
+                <input type="radio" id="btech" name="entry.1018459027" value="B-Tech" required
+                    class="text-indigo-500 focus:ring-indigo-500 bg-gray-900 border-gray-700">
+                <span>B-Tech</span>
+            </label>
+
+            <label class="flex items-center space-x-3 mt-2">
+                <input type="radio" id="bca" name="entry.1018459027" value="BCA"
+                    class="text-indigo-500 focus:ring-indigo-500 bg-gray-900 border-gray-700">
+                <span>BCA</span>
+            </label>
+
+            <label class="flex items-center space-x-3 mt-2">
+                <input type="radio" id="bcom" name="entry.1018459027" value="B.COM"
+                    class="text-indigo-500 focus:ring-indigo-500 bg-gray-900 border-gray-700">
+                <span>B.COM</span>
+            </label>
+
+            <label class="flex items-center space-x-3 mt-2">
+                <input type="radio" id="bba" name="entry.1018459027" value="BBA"
+                    class="text-indigo-500 focus:ring-indigo-500 bg-gray-900 border-gray-700">
+                <span>BBA</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="mt-6">
+            <label for="reason" class="block text-sm font-medium text-gray-300">
+                Reason for joining
+                <textarea id="reason" name="entry.56527137" required
+                    class="mt-1 w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 h-24 resize-none
+                    text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit"
+            class="mt-8 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-lg
+            transition duration-200 shadow-lg tracking-wide">
+            Submit
+        </button>
+
+    </form>
+
+</body>
+</html>
